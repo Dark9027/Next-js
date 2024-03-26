@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+hr {
+  margin: 5px;
+}
+
+.com2 {
+  max-width: 60vh;
+}
+
+.common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.common2 {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.box {
+  border-radius: 3vh;
+}
+
+.inside_box {
+  box-shadow: 0px 0px 8px 8px lightgrey;
+  border-radius: 3vh;
+  padding: 3vh 1vh;
+  min-width: 390px;
+  min-height: 200px;
+}
+
+.h {
+  height: 0px;
+  color: black;
+  background-color: black;
+}
+
+.second {
+  margin-top: 10vh;
+}
+
+.set {
+  margin: 20px 40px;
+}
+
+.sp {
+  margin-left: 2vh;
+  font-size: medium;
+}
+
+img {
+  min-width: 106px;
+  max-width: 120px;
+  max-height: 105px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.d {
+  font-size: small;
+}
+
+.ss {
+  position: absolute;
+  bottom: 0;
+  right: 27px;
+}
+
+@media screen and (max-width: 575px) {
+
+  .inside_box {
+      min-width: 290px;
+  }
+
+  .ss {
+      position: absolute;
+      bottom: 0;
+      right: 69px;
+  }
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
